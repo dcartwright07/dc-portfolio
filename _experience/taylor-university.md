@@ -3,7 +3,7 @@ experience_id: 3
 name: Taylor University
 location: Upland, IN
 position: Marketing Lead Web Developer
-start_date: June 2018
+start_date: Jun 2018
 end_date: Present
 ---
 

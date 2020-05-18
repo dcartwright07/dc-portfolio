@@ -3,7 +3,7 @@ experience_id: 2
 name: Freelance
 location: Various Locations
 position: Web Designer/Developer
-start_date: September 2013
+start_date: Sept 2013
 end_date: Present
 ---
 

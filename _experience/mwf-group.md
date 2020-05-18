@@ -3,8 +3,8 @@ experience_id: 1
 name: MWF Group Bahamas
 location: Nassau, Bahamas
 position: Web Developer
-start_date: January 2015
-end_date: March 2016
+start_date: Jan 2015
+end_date: Mar 2016
 ---
 
 Under the supervision of the lead developers, I worked as part of the web development team in creating and maintaining standards-based code for email templates and HTML web pages. I also collaborated with the marketing & e-commerce departments by providing support and contributing to key project initiatives.
