@@ -1,0 +1,28 @@
+<footer id="footer">
+	<div class="container container-lg">
+		<div class="row py-5">
+			<div class="col text-center">
+
+				<ul class="footer-social-icons social-icons social-icons-clean social-icons-big social-icons-opacity-light social-icons-icon-light mt-1">
+					{% for item in site.data.social %}
+						<li class="menu-item">
+							<a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %} target="_blank">
+								<i class="fab {{ item.icon }}"></i>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyright footer-copyright-style-2">
+		<div class="container container-lg py-2">
+			<div class="row py-4">
+				<div class="col-12 text-center d-flex align-items-center justify-content-center mb-4 mb-lg-0 pt-4 pt-lg-0">
+					<p>&copy; Copyright 2020. All Rights Reserved | Dominic Cartwright</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

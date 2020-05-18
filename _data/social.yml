@@ -1,0 +1,12 @@
+- name: Facebook
+  link: https://www.facebook.com/nicholas.cartwright1
+  icon: fa-facebook-f
+- name: Twitter
+  link: https://twitter.com/nickcartwri12
+  icon: fa-twitter
+- name: LinkedIn
+  link: https://www.linkedin.com/in/dominic-cartwright/
+  icon: fa-linkedin-in
+- name: Github
+  link: https://github.com/dcartwright07
+  icon: fa-github

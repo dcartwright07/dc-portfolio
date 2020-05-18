@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div role="main" class="main">
+
+	{% include project-top-bar.html %}
+
+	<div class="container py-4">
+		<div class="row">
+			<div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+				<div class="img-thumbnail p-0 d-block">
+					<img src="{{ page.image }}" class="img-fluid border-radius-0" alt="{{ page.image_alt}}" />
+				</div>
+			</div>
+		</div>
+		<div class="row pt-4 mt-2 mb-5">
+			<div class="col-md-7 mb-4 mb-md-0">
+				<h2 class="text-color-dark font-weight-normal text-5 mb-2">Project <strong class="font-weight-extra-bold">Description</strong></h2>
+				{{ content }}
+				{% if page.contributors %}
+					<p>
+						Other contributors:
+						{% for person in page.contributors %}
+							<a href="{{ person[1] }}" target="_blank">{{ person[0] }}</a>{% if forloop.last %}{% continue %}{% else %},{% endif %}
+						{% endfor %}
+					</p>
+				{% endif %}
+			</div>
+			<div class="col-md-5">
+				<h2 class="text-color-dark font-weight-normal text-5 mb-2">Project <strong class="font-weight-extra-bold">Details</strong></h2>
+				<ul class="list list-icons list-primary list-borders text-2">
+					<li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Client:</strong> {{ page.client }}</li>
+					<li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Deployment:</strong> {{ page.date | date: "%B %Y" }}</li>
+					<li>
+						<i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Languages:</strong>
+						{% for language in page.languages %}
+							<span class="badge badge-dark badge-sm badge-pill px-2 py-1 ml-1">{{ language }}</span>
+						{% endfor %}
+					</li>
+					<li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Platform:</strong> {{ page.platform }}</li>
+					<li><i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Project URL:</strong>
+						<a href="{{ page.project_url }}" target="_blank" class="text-dark">{{ page.project_url }}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+{% include recent-projects.html %}

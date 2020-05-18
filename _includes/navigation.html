@@ -1,0 +1,64 @@
+<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+	<div class="mobile-logo">
+		<img alt="Dominic Cartwright Logo" width="200" src="/assets/img/logo-light.svg" />
+	</div>
+
+	<ul id="mainNav" class="navbar-nav mr-auto">
+
+		{% for item in site.data.navigation %}
+			<li class="menu-item">
+				<a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+					{{ item.name }}
+				</a>
+			</li>
+		{% endfor %}
+
+	</ul>
+
+</div>
+
+<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+	<div class="header-body border-top-0">
+		<div class="header-container container container-lg">
+			<div class="header-row">
+				<div class="header-column">
+					<div class="header-row">
+						<div class="header-logo">
+							<a href="/">
+								<img alt="Dominic Cartwright Logo" width="200" src="/assets/img/logo-dark.svg" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-column justify-content-end">
+					<div class="header-row">
+						<div class="header-nav header-nav-links">
+							<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-dropdown-arrow header-nav-main-effect-3 header-nav-main-sub-effect-1">
+								<nav class="collapse">
+
+									<ul id="mainNav" class="nav nav-pills">
+
+										{% for item in site.data.navigation %}
+											<li class="menu-item">
+												<a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+													{{ item.name }}
+												</a>
+											</li>
+										{% endfor %}
+
+									</ul>
+
+								</nav>
+							</div>
+							<button class="btn header-btn-collapse-nav" type="button" data-toggle="offcanvas">
+								<i class="fas fa-bars"></i>
+							</button>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,15 @@
+<section class="section section-height-3 bg-color-grey m-0 border-0">
+	<div class="container container-lg">
+		<h4 class="mb-3 text-4 text-uppercase">Recent <strong class="font-weight-extra-bold">Projects</strong></h4>
+		<div class="row">
+
+			{% assign projects = site.projects | sort: "post_id" | reverse %}
+			{% for project in projects limit:4 %}
+				<div class="col-12 col-sm-6 col-lg-3 mb-4">
+					{% include project-item.html %}
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</section>

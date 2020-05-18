@@ -1,0 +1,18 @@
+collections:
+  projects:
+    output: true
+    sort_by: project_id
+  experience:
+    output: true
+    sort_by: experience_id
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
