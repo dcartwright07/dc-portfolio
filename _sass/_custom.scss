@@ -108,6 +108,10 @@ a {
 	box-shadow: 0 4px 2px -2px #eee;
 }
 
+.main {
+	margin-bottom: 50px;
+}
+
 section {
 	&.timeline {
 		@media (min-width: 992px) {
@@ -203,6 +207,7 @@ section {
 }
 
 #footer {
+	margin-top: 0;
 	.footer-copyright {
 		p {
 			color: #fff;
