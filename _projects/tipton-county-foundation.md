@@ -3,7 +3,7 @@ project_id: 6
 name: Tipton County Foundation
 published: true
 client: Tipton County Foundation
-date: August 2019
+date: February 2021
 project_type: website
 languages:
 platform: WiX
