@@ -5,7 +5,7 @@ published: true
 client: Tipton County Foundation
 date: August 2019
 project_type: website
-languages: [wix]
+languages:
 platform: WiX
 project_url: https://www.tiptoncf.org/
 featured_image: /assets/img/projects/tipton-county-in.png

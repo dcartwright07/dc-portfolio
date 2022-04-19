@@ -59,6 +59,7 @@ layout: default
             <strong class="text-color-primary">Deployment:</strong>
             {{ page.date | date: "%B %Y" }}
           </li>
+          {% if page.languages %}
           <li>
             <i class="fas fa-caret-right left-10"></i>
             <strong class="text-color-primary">Languages:</strong>
@@ -68,6 +69,7 @@ layout: default
             </span>
             {% endfor %}
           </li>
+          {% endif %}
           <li>
             <i class="fas fa-caret-right left-10"></i>
             <strong class="text-color-primary">Platform:</strong>
